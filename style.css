@@ -1,34 +1,26 @@
-:root {
-  font-family: Inter, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
-}
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: InterVariable, sans-serif;
-  }
-}
 @font-face {
   font-family: "InterDisplay-Regular", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/InterDisplay-Regular.woff2") format("woff2");
-  src: url(.../fonts/InterDisplay-Regular.ttf);
+  src: url("../fonts/InterDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/InterDisplay-Regular.ttf") format("ttf");
 }
 @font-face {
   font-family: "InterDisplay-Medium", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/InterDisplay-Medium.woff2") format("woff2");
+  src: url("../fonts/InterDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/InterDisplay-Medium.ttf") format("ttf");
 }
 @font-face {
   font-family: "InterDisplay-MediumItalic", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/InterDisplay-Medium.woff2") format("woff2");
-  src: url(fonts/);
+  src: url("../fonts/InterDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/InterDisplay-Medium.ttf") format("ttf");
 }
 body {
   margin: 0 auto;
@@ -362,6 +354,7 @@ header {
   position: relative;
   width: 14.275vw;
   height: 13.757vw;
+  overflow: hidden;
 }
 .techCard-1-text,
 .techCard-2-text,
@@ -393,6 +386,7 @@ header {
 .techCard-9-image {
   z-index: 3;
   position: absolute;
+  width: 14.275vw;
 }
 .techCard-1-image:hover,
 .techCard-2-image:hover,
@@ -590,7 +584,7 @@ textarea::placeholder {
   align-items: center;
   gap: 1.479vw;
   flex-shrink: 0;
-  border-radius: 500px;
+  border-radius: 116.279vw;
   background: #efefef;
   color: #000;
   font-family: "InterDisplay-Medium";
